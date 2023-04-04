@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital@1&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Questões</title>
+</head>
+<body>
+                                <h2>Internet e Redes</h2>
+                                <div class="imagem1">
+                                <center><img src="img/imagem1.jpg" width="490px" height="290px"></div></center>
+                                <br>
+
+    <h3> 1) Qual a função fundamental da camada de transporte?</h3>
+  <p>A camada de transporte trata, fundamentalmente, do processo de conexão entre duas entidades que irão se comunicar. Nesse processo, as principais funções por ela oferecidas às camadas superiores são: Definição da Qualidade de Serviço (QoS) Definição do processo de conexão e desconexão de uma sessão.</p>
+<br>
+    <h3>2) Explique a arquitetura cliente-servidor?</h3>
+  <p>A arquitetura cliente servidor é uma arquitetura de aplicação distribuída, ou seja, na rede existem os fornecedores de recursos ou serviços a rede, que são chamados de servidores, e existem os requerentes dos recursos ou serviços, denominados clientes.</p>
+<br>
+    <h3> 3) Qual mecanismo de endereçamento adotado pela camada de transporte? Como ele funciona? Existe alguma regulamentação?</h3>
+  <p>A camada de transporte utiliza dois protocolos: o TCP e o UDP. O UDP não é orientado à conexão. Ambos os protocolos podem servir a mais de uma aplicação simultaneamente. TCP é um padrão que define como estabelecer e manter uma conversa via rede, em que programas e aplicativos podem trocar dados.</p>
+<br>
+    <h3> 4) Quais as principais características do UDP? Em que situação ele é recomendado?</h3>
+  <p>Algumas das principais características do UDP (User Datagram Protocol): Diferente do TCP ele não é orientado à conexão; Não é confiável como o TCP, ele não garante a entrega completa dos dados; É preciso que dividamos manualmente os dados em datagramas (entidades de dados).</p>
+<br>
+    <h3> 5) O que é uma conexão? Explique utilizando um esquema ilustrativo.</h3>
+  <p>As redes de computadores podem ser definidas como um conjunto de equipamentos, que além de compartilhar dos mesmos recursos, também podem trocar informações entre si. Os recursos são, por exemplo, a conexão com a internet, dividida entre todas as máquinas conectadas a uma determinada rede.</p>
+<center><img src="img/imagem2.jpg" width="350" height="300"></center>
+<br>
+    <h3>6) Como ocorre o estabelecimento de uma conexão TCP?</h3>
+  <p>O processo de estabelecimento de conexões TCP se dá da seguinte forma: O host que quer iniciar a conexão, que normalmente é o cliente, envia um segmento com a flag SYN ativada, especificando a qual número de porta no servidor de destino ele quer se conectar, juntamente com o número de sequência inicial (Seq ISN).</p>
+<br>
+    <h3>7) Descreva o funcionamento do campo Code Bits.</h3>
+  <p>Um campo de bits é uma construção de compilador que automatiza o layout de um inteiro e um conjunto de máscaras para extrair os valores de membro. O mesmo resultado pode ser atingido pela simples definição de máscaras e pelo uso do operador.</p>
+<br>
+    <h3>8) Explique de maneira sucinta o controle de sequência adotado pelo TCP. </h3>
+  <p>Controle de Fluxo TCP
+    O controle de fluxo no TCP visa evitar que um emissor não afogue um receptor, enviando mais dados mais rápido do que ele possa processar. Quando uma conexão TCP recebe bytes que estão corretos e em sequência ela os armazena em um buffer de recepção para que a aplicação possa processá-los.</p>
+<br>
+    <h3>9) Faça o mesmo com o controle de erros.</h3>
+  <p>O controle de erros é realizado pela camada de transporte do host de destino dos dados, e funciona informando à camada de transporte do transmissor a repeito de problemas que venham a ocorrer.</h3>
+<br>
+    <h3>10) Como é o funcionamento do protocolo DNS? Descreva utilizando como base sua estrutura hierárquica.</h3>
+  <p>O sistema DNS da internet funciona praticamente como uma agenda de telefone ao gerenciar o mapeamento entre nomes e números. Os servidores DNS convertem solicitações de nomes em endereços IP, controlando qual servidor um usuário final alcançará quando digitar um nome de domínio no navegador da web.</p>
+<br>
+    <h3>11) O que é um root server?</h3>
+  <p>Os servidores raiz são nameservers do DNS que operam na zona raiz. Esses servidores podem responder diretamente a consultas de registros armazenados ou em cache na zona raiz e também podem encaminhar outras solicitações ao servidor de Domínio de Nível Superior (TLD) apropriado.</p>
+<br>
+    <h3>12) Quem são os componentes do DNS e qual a função de cada um deles?</h3>
+  <p>O sistema DNS da internet funciona praticamente como uma agenda de telefone ao gerenciar o mapeamento entre nomes e números. Os servidores DNS convertem solicitações de nomes em endereços IP, controlando qual servidor um usuário final alcançará quando digitar um nome de domínio no navegador da web.</p>
+<br>
+    <h3>13)Quais os tipos de servidores DNS possíveis?</h3>
+  <p>Existem quatro tipos de servidores DNS envolvidos no processo de resolução – DNS recursivo, servidor-raiz, servidor TLD e nameserver autoritativo.</h3>
+<br><br>
+    <h3>14)Qual a diferença de uma requisição iterativa para uma recursiva?</h3>
+  <p>Uma pesquisa de DNS recursivo é onde um servidor de DNS se comunica com vários outros servidores DNS para buscar um endereço de IP e devolvê-lo ao cliente. Isso contrasta com uma consulta de DNS iterativa, em que o cliente se comunica diretamente com cada servidor de DNS envolvido na pesquisa.</p>
+<br>
+    <h3>15)Quais as principais características do protocolo FTP?</h3>
+  <p>Rapidez: Consegue enviar e receber arquivos extensos sem causar impacto na velocidade;
+  <p>Versatilidade: É possível atuar tanto como servidor quanto cliente;</p>
+  <p>Base em TCP: Baseado no protocolo TCP tem suporte online e possui uma interface de comunicação com o protocolo TCP/IP;</p>
+  <p>Segurança: É necessário login e senha, ou ip autenticado para usá-lo.</p>
+
+    
+</body>
+</html>
