@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300;1,400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Protocolo de rede</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+
+<center><h3>Protocolo TCP e UDP</h3></center>
+
+<br>
+<br>
+
+    <h3>O protocolo TCP</h3>
+    <p>O protocolo TCP tem como característica ter uma transmissão confiável ponto-a-ponto, ou seja,
+se o {Computador (A) transmitir dados para o computador (B), será necessário enviar um ACK
+(Bit de Reconhecimento) para o computador (B), possibilitando a recuperação dos pacotes,
+rejeitando os pacotes duplicados e organizando os pacotes que forem chegando.</p>
+<p>O TCP tem algumas características especificas como ordenar os pacotes, não possibilita o
+acumulo de pacotes na rede, e consegue transmitir ao mesmo momento a vários destinos
+diferentes, quando inicia uma conexão o também a fecha.</p>
+<p>Quando estabelecemos a comunicação com o protocolo TCP com duas máquinas, quem envia
+os pacotes é denominado Cliente, e quem recebe os pacotes é chamado de Servidor, sendo
+assim a comunicação é estabelecida nos dois sentidos.</p>
+<p>A comunicação do Protocolo TCP é realizada em três etapas:</p>
+
+       <li><b>1° Etapa: </b> O Cliente envia o SYN (Uma solicitação de conexão, no qual possui um sequencial de
+bytes para Cliente-Servidor);</li>
+        <li><b>2° Etapa: </b>O Servidor aceita o pedido de conexão (SYN), e envia um pacote aceitando o pedido
+(ACK), no qual possui um sequencial de bytes para Servidor-Cliente;</li>
+        <li><b>3° Etapa:</b>O Destino (servidor) transmite o ACK permitindo o SYN, então a troca de informações
+é efetuada entre esses hosts, quando se encerra a conexão, tanto o cliente ou servidor podem
+finalizar a conexão, um dos dois pode enviar o pacote FIN (Fim da conexão), quando se recebe
+o FIN a máquina envia um ACK aceitando o fim da conexão e algum tempo depois (milésimos
+de segundos) ele envia o FIN, finalizando de fato a conexão.</li>
+
+          <br> <br>
+
+              <h3>O protocolo UDP</h3>
+              <p>O UDP é um protocolo que não é confiável, pois ele só envia os dados para o host de destino,
+                por exemplo ele embala os datagramas e simplesmente envia, sem pedir confirmação de pacote
+                ou verificar erros nos pacotes.</p>
+<p>Este protocolo não dá garantias que o pacote será enviado até o seu destino, e muito menos que
+  elas cheguem à ordem, pois não possui métodos para gerenciar os fluxos de dados.</p>
+<p>Muitos pensam que por causa da falta de confiabilidade do protocolo UTP, que é melhor utilizar
+o TCP para obter a comunicação, entretanto vário serviço usufrui do protocolo UDP, pois é mais
+rápido o seu desempenho na rede.</p>
+<p>O protocolo UDP é muito utilizado em serviço de multimídia (streaming e VOIP), pois se houver
+perda de dados não ocasiona delay na transmissão, se por acaso algum pacote for perdido, o
+mesmo não será perceptível para o usuário.</p>
+
+          <h3>Portas TCP e Portas UDP</h3>
+          <p>Existem várias portas TCP e UDP, e cada porta especifica um serviço na rede, de acordo com
+seu protocolo em questão.</p>
+<p>Existem 65536 probabilidades de portas, isso porque são codificadas em 16 bits, por isso existe
+  um órgão chamado IANA que parametriza essas portas e seus usos.</p>
+          
+  </div>
+</main>
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
