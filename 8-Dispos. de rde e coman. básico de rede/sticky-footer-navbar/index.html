@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300;1,400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Protocolo de rede</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+
+    <center><h3>Dispositivo de Rede e Comandos Básicos de Rede</h3></center>
+
+    <br>
+    <br>
+<h3>Dispositivo de Rede</h3>
+<br>
+    <h3>Dispositivos Ativos x Passivos na Rede</h3>
+    <p><b>Passivo da Rede: </b> São equipamentos de rede que são responsáveis por realizar a comunicação
+      pelo meio físico, ou seja, são dispositivos que funcionam com sinais elétricos e não realizam uma
+      análise de dados:</p>
+      <ol>
+        <li>Pach Panel;</li>
+        <li>Racks de Rede;</li>
+        <li>Voice Panel;</li>
+        <li>Cabos Metálicos;</li>
+        <li>Cabos Ópticos;</li>
+        <li>Conectores e Extensores;</li>
+        <li>Patch Cable;</li>
+        <li>Adapter Cable;</li>
+        <li>Cable Link.</li>
+      </ol>
+      <br>
+      <p><b>Ativo da Rede: </b>Dispositivos que analisam e decidem sobre o modo como a informação
+        atravessa o equipamento, afetando o funcionamento dos sistemas. Estes são responsáveis por
+        35
+        "decidirem" como os dados passam por seus equipamentos, de forma que influencia o
+        funcionamento do sistema, seu objetivo é estabelecer uma comunicação entre o cliente e o
+        servidor de uma maneira confiável e ágil, pois garantem que os serviços (portas) de rede
+        funcionem como o esperado, porém para que esses equipamentos funcionem de forma correta
+        você precisa adequá-los a realidade de seu ambiente de trabalho ou outro ambiente.</p>
+        <p>Alguns exemplos:</p>
+        <ol>
+          <li>Switches;</li>
+          <li>Hubs;</li>
+          <li>Bridges;</li>
+          <li>Modems;</li>
+          <li>Roteadores;</li>
+          <li>Placa de Rede (NIC);</li>
+          <li>Firewall (equipamento);</li>
+          <li>Chaveador KVM;</li>
+          <li>Conversor de Mídia;</li>
+          <li>Servidores;</li>
+          <li>Access Points (Pontos de Acesso).</li>
+        </ol>
+
+      
+       <h3>Equipamentos de Rede</h3>
+       <br>
+       <p><b>a.Hub</b></p>
+       <p>Este dispositivo funciona como um repetidor, ele simplesmente propaga a informação para todas
+        as portas, menos para a qual enviou a mensagem, essa prática é denominada como Domínio de
+        Colisão. Outro detalhe importante é que se dois computadores estiverem se comunicando o
+        restante tem que esperar até a conexão entre eles finalizar, pois senão poderá ocorrer uma
+        colisão de pacotes.</p>
+        <br>
+        <p><b>b. Bridge (Ponte)</b></p>
+       <p>Traduzido livremente como ponte, é uma ferramenta que tem como objetivo disponibilizar a
+        comunicação entre duas redes diferentes, por exemplo, se eu estiver em uma rede apartada de
+        outro computador, posso colocar um bridge para unir essas redes sendo assim possibilitando a
+        troca de informação entre eles.</p>
+        <br>
+        <p><b>c. Switch</b></p>
+       <p>Esse dispositivo tem como objetivo de corrigir os erros de certos pacotes, e sistematizar o tráfego
+        de informação na rede, pois evita o congestionamento ou as colisões dos arquivos, porque ele
+        diferencia cada estação conectada por sua respectiva porta, então ele envia a informação
+        diretamente ao destino possibilitando um tráfego de pacotes ágil e sem colisão.</p>
+        <br>
+        <p><b>d. Roteador (Router)</b></p>
+       <p>Este é um dispositivo de rede que tem como objetivo de encaminhar os pacotes na rede, pois
+        permite estabelecer uma comunicação entre diversos equipamentos de rede ou tecnologias
+        aplicadas, também tem a disponibilidade de realizar o encaminhamento dos pacotes via rotas
+        estáticas ou "Rotas Dinâmicas" depende muito do protocolo que vai utilizar.</p>
+        <br>
+        <p><b>e. Placa de Rede</b></p>
+       <p>Conhecido como NIC (Network Interface Card), este dispositivo é responsável por possibilitar a
+        comunicação entre os computadores da rede, ou seja, sua função principal é preparar, enviar e
+        gerenciar as informações para a rede, e também "traduz" as informações que vem dos cabos e
+        os transforma em bytes, para que o computador possa entender.
+        </p>
+        <br>
+        <p><b>f. Roteador Wireless</b></p>
+       <p>Roteador Wireless (WiFi) tem como objetivo compartilhar a rede (INTERNET) para os
+        diapositivos sem utilizar o meio físico</p>
+        <br>
+        <p><b>g. Access Point</b></p>
+       <p>Tem como objetivo repetir o sinal, ou interligar redes wireless, ele serve como repetidor de sinal,
+        e suas aplicações nos dias de hoje são considerável.</p>
+        <br>
+        <p><b>h. Modem</b></p>
+       <p>Modem é um modulador de sinal, ou seja, é um dispositivo que visa converter sinais analógicos
+        para digitais, ou vice-versa, isso possibilita que sejam transmitidos de forma coerente.</p>
+        <br>
+
+<h3>Comando Básico de Rede</h3>
+<br>
+<p>Comando de rede tem como objetivo testar o serviço para verificar se está funcionando e
+  identificar o problema, todos os sistemas operacionais tem um prompt
+  de comando, o que varia são os comandos de Sistema operacional para outro, mas a
+  funcionalidade do mesmo é "universal".</p>
+  <p>Os comandos que nós iremos ver agora é no Sistema Operacional Windows:</p>
+
+  <p><b>a. Ping</b></p>
+       <p>Com o ping podemos fazer uma medição de quantos milissegundos (ms), ou seja, mede o
+        tamanho e o tempo para o pacote ser enviado e voltar, então quanto o menor for o valor de tempo
+        indica uma maior velocidade</p>
+        <br>
+        <p><b>b. TraceRoute</b></p>
+        <p>Essa ferramenta possibilita descobrir qual o caminho que pacote (dados) faz desde sua origem
+          até o destino, tem objetivo de verificar falhas de seus intermediários, também possibilita ver se
+          há atrasos nas informações entre a origem e seus nós.
+          Só consegue verificar até 30 saltos até chegar ao destino.</p>
+         <br>
+         <p><b>c. Ipconfig</b></p>
+        <p>Esta ferramenta demonstra a configuração do IPV4 e IPV6 de todas as placas de rede (IP,
+          Gateway, Máscara de Rede e DNS), qual o adaptador da placa de rede, o MAC e o Domínio no
+          qual está configurado.</p>
+         <br>
+         <ol>
+          <li>ipconfig /release = libera o ip;          </li>
+          <li>ipconfig /renew = renova o ip;          </li>
+          <li>ipconfig /flushdns = limpa o cache de DNS da máquina.</li>
+         </ol>
+         <p><b>d. NetStat</b></p>
+         <p>O comando Netstat exibe todas as portas e conexões pré-estabelecida.</p>
+         <p><b>NETSTAT</b></p>
+         <p>-a = Mostra todas as conexão e portas.</p>
+         <p>-e = Mostra as estatísticas Ethernet.</p>
+         <p>-n = Mostra os endereços e os números de portas (Decimal).</p>
+         <p>-p proto = Mostra as conexões para o protocolo especificado.</p>
+         <p>-r = Mostra o conteúdo da tabela do roteador.</p>
+         <p>-s = Mostra as estatísticas por protocolo.</p>
+         <p>-abnov = Mostra os processos que utilizam a conexão internet.</p>
+          <br>
+          <p><b>e. Route</b></p>
+        <p>Mostra ou altera a tabela do roteador</p>
+        <p><b>ROUTE</b></p>
+        <p>-f = deleta as tabelas do roteador.</p>
+        <p>-p = Aplica na tabela depois de reiniciar a máquina.</p>
+        <p>PRINT = Mostra um itinerário.</p>
+        <p>ADD = Acrescenta um itinerário.</p>
+         <br>
+         <p><b>f.Arp</b></p>
+         <p>Resolve os endereços na rede em MAC, traduz os nomes e altera as tabelas do endereço IP.</p>
+         <br>
+         <p><b>g. NbtStat</b></p>
+         <p>Atualiza o cache, e demonstra as estatísticas dos protocolos e suas conexões.</p>
+         <br>
+         <p><b>h. Telnet</b></p>
+         <p>Esse serviço possibilita averiguar se o serviço TCP está "rodando" na máquina em questão, pode
+          testar se a porta (serviço) em questão está funcionando ou não, e até mesmo entrar no
+          equipamento caso o telnet esteja habilitado.</p>
+         <br>
+         <p><b>i. Hostname</b></p>
+         <p>Demontra o nome da máquina.</p>
+         <br>
+         <p><b>j. Nslookup</b></p>
+         <p>Essa ferramenta permite traduzir um nome de um host ou site em IPV4 ou IPV6 ou vice-versa.</p>
+         <br>
+         <p><b>k. NetSh</b></p>
+         <p>Este comando Netsh é uma ferramenta que possibilita incluir ou excluir configurações de rede
+          remotamente, ou executar script em modo BASH.</p>
+         <br>
+
+
+
+  </div>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
