@@ -1,0 +1,45 @@
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+main > .container {
+  padding: 15px 12px 0;
+}
+
+h3 {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+li{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.pp{
+  font-size: 18px;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.p{
+  font-size: 17px;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.ppp{
+  font-size: 18px;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.op{
+  font-size: 18px;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.la{
+  font-size: 18px;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.lo{
+  font-size: 18px;
+  font-family: 'Lucida Sans', sans-serif;
+}

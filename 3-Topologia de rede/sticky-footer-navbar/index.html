@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.108.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300;1,400&family=Roboto:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https: //fonts.googleapis.com/css2?family= Roboto :ital,wght@1,100 & display=swap" rel="stylesheet">
+  <title>Topologia de Rede</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">
+
+
+
+
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="sticky-footer-navbar.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="container">
+      <h3>O que é topologia de redes?</h3>
+      <div class="pp">
+        <p>Existem alguns modelos no qual se pode sistemizar a conexão de cada host na rede.</p>
+        <br>
+      </div>
+      <h3>Tipos de Topologia de rede:</h3>
+      <li>Topologia Física: Demonstra de fato como os hosts estão dispostos e conectados no ambiente físico. Aposição de
+        cada host, a forma que os cabos estão conectados, nós denominamos de topologia de rede, que tem como objetivo de
+        auxiliar em vários pontos críticos, como a maleabilidade, velocidade na tranferência dos dados e segurança.</li>
+      <li>Topologia Lógica: Demonstra a forma como os dados são transmitidos na rede, ou a forma como esses dados passam
+        de um host para outro, sem se preocupar com a conexão física dos hosts, a forma como os dados são transmitidos
+        na rede podem ser controladas por switches e roteadores.</li>
+      <br> <br>
+
+      <h3>Benefícios e desvantagens de cada Topologia:</h3>
+      <br>
+      <div class="pp">
+        <p>Barramento</p>
+      </div>
+      <div class="p"><p>Todos os hosts estão conectados ao mesmo meio físico, embora os dados não "circulem" dentro de cada um dos nós,
+        ou seja, se o computados estiver "escrevendo" aos outros computadores escutam e coletam os dados que édestinado
+        para ele.</p></div>
+        <p>Benefícios:</p>
+      <li>Utilizam-se poucos cabos;</li>
+      <li>Sua instalação é simples;</li>
+      <li>Simples e relativamente confiável;</li>
+      <li>Sua topologia é simples e de certa forma confiavél;</li>
+      <li>E se necessário permite a ampliação da rede sem complicações.</li>
+
+      <br>
+
+      <p>Desvantagem:</p>
+      <li>A comunicação entre os hosts pode ficar lenta se o tráfego na rede aumentar;</li>
+      <li>Problemas são difíceis de isolar;</li>
+      <li>Caso ocorra um problema, o mesmo é difícil de identificar e isolar;</li>
+      <li>Se por algum motivo houver uma falha no cabo da rede, a rede de sua empresa não irá funcionar.</li>
+<br>
+      <div class="la"><p>Estrela</p></div>
+      
+      <p>Esta topologia usa o meio físico de par trançado com um centralizador de rede, este se encarrega de fazer a
+        comunicação entre os hosts, isso facilita a detecção dos problemas, ou seja, se um computador não estiver ligado
+        na rede o LED do concentrador ficará desligado indicando que há um problema no host.</p>
+
+      <p>Benefícios:</p>
+      <li>Facilita a instalação e configuração dos computadores na rede;</li>
+      <li>A gerencia dos equipamentos é centralizado;</li>
+      <li>Caso um computador esteja com falha, o mesmo não paralisa a rede.</li>
+<br>
+      <p>Desvantagem:</p>
+      <p>Se o centralizador da rede apresentar a falha, o mesmo ocasiona a paralisação na rede.</p>
+      <br>
+
+      <div class="lo"><p>Anel</p></div>
+      <p>Estes hosts são conectados em série, no qual se caracteriza em um círculço formano, estes dados sõ programados
+        em um única direção de host a host até chegar em seu destino, ou seja, se uma estação transmitir uma mensagem,
+        terá que retransmitir para todas as estações até chegar em seu destino, esta mensagem somente o host poderá
+        retirar da rede quem transmiti ou recebe a mesma.</p>
+      <p>Benefícios:</p>
+      <li>Os hosts conseguem acessar a rede de uma maneira uniforme;</li>
+      <li>O crescimento dos hosts não altera o desempenho da rede.</li>
+      <br>
+      <p>Desvantagens:</p>
+      <li>Se um desses hosts falhar, poderá impactar toda a rede;</li>
+      <li>Difícil isolar os Hosts.</li>
+<br>
+      <div class="lo"><p>Malha</p></div>
+      <p>Esta é uma das topologias muito utilizada, pois facilita a instalação e a configuração dos hosts. E como se
+        todos os nós estivessem estrelaçados entre si, pois são diversos caminhos possíveis por onde os dados podem
+        trafegar até o destino.</p>
+
+      <p>Benefícios:</p>
+      <li>Maior abundância e confiabilidade;</li>
+      <li>Agilidade de reconhecimento nas falhas que possa ocorrer na rede.</li>
+<br>
+      <p>Desvantagem:</p>
+      <p>Alto custo na implantação.</p>
+
+    </div>
+  </main>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
