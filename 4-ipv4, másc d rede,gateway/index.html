@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.108.0">
+  <title>IPV4, Máscara de Rede, e Gateway</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+
+
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <center>
+        <h2>IPV4, Máscara de Rede e Gateway</h2>
+      </center>
+
+      <hr class="featurette-divider">
+
+
+      <div class="row">
+        <h2 class="fw-normal">O que é IPV4?</h2>
+        <p>O protocolo IPV4, esta tecnologia permite que nossos hosts trafeguem
+na internet, todo host que estiver conectado (online) terá um código "99.48.224.242" por exemplo,
+que permite enviar e receber informações de outros hosts que estão conectados na rede.</p>
+      </div><!-- /.col-lg-4 -->
+      <br>
+        <h2 class="fw-normal">O que é Máscara de Rede?</h2>
+        <p>Vamos imaginar que a máscara de rede é um bairro no qual possui várias residências (os IPs).
+Os IPs que utilizam uma determinada classe, pertence aquela classe, da mesma forma que se
+uma residência (IP), está presente no Bairro (Máscara de Rede) pertence a mesma, sendo que
+cada IP corresponde a uma máscara de rede:</p>
+<p>Obs.: Os IPs possuem 4 octetos de binários que os totalizam em 32 bits.</p>
+<ul>
+  <li><b>Classe A: </b>10.0.0.0 até 10.225.255.255 (255.0.0.0) - Utiliza apenas o primeiro octeto do IP que
+fica exclusivo para a máscara de rede e o restante para os hosts
+(11111111.00000000.00000000.00000000).</li>
+<li><b>Classe B: </b>172.16.0.0 até 172.31.255.255 (255.255.0.0) - Utiliza os dois primeiros octetos do IP
+que fica exclusivo para a máscara de rede e o restante para os hosts
+(11111111.11111111.00000000.00000000).</li>
+<li><b>Classe C: </b>192.168.0.0 até 192.168.0.0 (255.255.255.0) - Utiliza os três primeiros octetos do IP
+que fica exclusivo para a máscara de rede e o restante para os hosts
+(11111111.11111111.11111111.00000000).</li>
+</ul>
+<br>
+<div class="row">
+  <h2 class="fw-normal">O que é Gateway?</h2>
+  <p>O Gateway em geral é um host ou dispositivo de rede no qual se depara com duas redes.
+    Essa tecnologia libera a
+    passagem dos dados entre hosts. No qual
+    pode ser instalado "políticas de acesso", que verificam a segurança dos dados do computador
+    até a internet.</p>
+    <p>É como se fosse um portal que libera o acesso para o mundo externo (Internet), ele isola a rede
+    doméstica com a internet.</p>
+    <p>Como havíamos dito o gateway é um portal que libera o acesso para a internet, por exemplo, eu
+    tenho 04 computadores com 04 IPs diferente que estão na mesma máscara de rede, para não
+    ter um modem ou qualquer outro dispositivo que conecte à internet em cada computador tem um
+    gateway que compartilha a internet ou acesso para outra rede em todos os computadores da
+    minha rede.</p>
+    <br>
+    <p>Exemplo:</p>
+    <br>
+    <b>Computador A:</b>
+    <br><br>
+    <p>IP: 192.168.1.100</p>
+    <p>Máscara de Rede: 255.255.255.0</p>
+    <p>Gateway: 192.168.1.1</p>
+    <br>
+    <b>Computador B:</b>
+    <br><br>
+    <p>IP: 192.168.1.158</p>
+    <p>Máscara de Rede: 255.255.255.0</p>
+    <p>Gateway: 192.168.1.1</p>
+    <br>
+    <b>Computador C:</b>
+    <br><br>
+    <p>IP: 192.168.1.200</p>
+    <p>Máscara de Rede: 255.255.255.0</p>
+    <p>Gateway: 192.168.1.1</p>
+    <br>
+    <b>Computador D:</b>
+    <br><br>
+    <p>IP: 192.168.1.254</p>
+    <p>Máscara de Rede: 255.255.255.0</p>
+    <p>Gateway: 192.168.1.1</p>
+</div>
+<br>
+<h2 class="fw-normal">Configurando um cliente na rede</h2>
+        <p>Existem duas formas para configurar um cliente na rede, o dinâmico onde só insere o cabo de
+          rede e o Protocolo DHCP inclui todas as informações como IP, Gateway, DNS e Máscara de
+          Rede, e a outra forma é estático onde você entra em (Painel de Controle – Redes e Internet –
+          Central de Rede e Compartilhamento – Alterar as configurações do adaptador – botão direito do
+          mouse em cima do ícone do adaptador – propriedade – Protocolo TCP/IPV4), chegando aqui
+          você inseri manualmente as informações necessárias para se conectar na rede (IPV4, máscara
+          de rede, Gateway e DNS.</p>
+      </div><!-- /.col-lg-4 -->
+      </div><!-- /.col-lg-4 -->
+    </div>
+
+    <!-- START THE FEATURETTES -->
+
+</body>
+
+</html>
