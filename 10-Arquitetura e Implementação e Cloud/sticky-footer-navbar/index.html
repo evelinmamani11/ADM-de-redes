@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300;1,400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Arquitetura e Implementação e Cloud</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+
+    <center><h3>Arquitetura e Implementação e Cloud</h3></center>
+
+    <br>
+    <br>
+
+
+  <p><b>Arquitetura e Implementação e Cloud</b></p>
+       <p>Na prática, arquitetura cloud envolve a avaliação das tecnologias disponíveis, assim como 
+configuração de uma série de ferramentas, explanando os impactos sobre a organização e, por 
+fim, custos. Assim como a arquitetura predial, a arquitetura cloud é como se fosse a planta da 
+construção, no caso é a nossa planta de estruturas tecnológicas.</p>
+
+        
+        <p><b>Vantagens</b></p>
+        <p>Arquitetura Cloud permite que as empresas reduzam ou até mesmo eliminem seu uso com 
+infraestrutura, no servidor e no armazenamento locais, sendo assim reduzindo gastos som 
+equipamentos.</p>
+
+          <p>De modo geral, o meio corporativo que adot a arquitetura de nuvem transferem os recursos de 
+TI para a nuvem pública, o que elimina a demanda de servidores e armazenamento locais e 
+reduz a necessidade de espaço físico, refrigeração e energia para data centers, substituindo-os 
+por despesas mensais com TI, ou seja, não se gasta com equipamentos físicos e sim com aluguel 
+ou mensalidades de espaços virtuais (em Cloud).</p>
+
+<p>Existem três modelos principais de arquitetura de nuvem que estão levando as organizações 
+para a nuvem. Cada um deles tem os próprios benefícios e recursos importantes.</p>
+
+         <br>
+
+         <table border="1">
+    <tr>
+        <td>Software como serviço(SaaS)</td>
+    </tr>
+    
+</table>
+
+<br>
+
+<table border="1">
+    <tr>
+        <td>Plataforma como serviço(PaaS)</td>
+    </tr>
+</table>
+
+<br>
+
+<table border="1">
+    <tr>
+        <td>Infraestrutura como serviço (IaaS)</td>
+    </tr>
+</table>
+
+<br>
+
+         <p><b>Alguns dos motivos para aderir:</b></p>
+
+         <ol>
+          <li>Acelerar o fornecimento de novos apps;</li>
+          <li> Reutilização da arquitetura nativa da nuvem, como o Kubernetes, assim moderniza suas
+aplicações e otimizar todo processo de desenvolvimento;</li>
+<li>Conformidade;</li>
+<li> Maior transparência de recursos;</li>
+<li>Arquitetura de nuvem híbrida para permitir o dimensionamento em tempo real dos aplicativos 
+conforme a mudanças de escopo;</li>
+<li>Cumprimento de metas.</li>
+         </ol>
+
+         <br>
+
+         <p><b>Como funciona a arquitetura de Cloud?</b></p>
+
+         <table border="1">
+    <tr>
+        <td><b>Arquitetura pública: </b></td>
+    </tr>
+    <td>Geralmente são ambientes de nuvem 
+criados em uma infraestrutura de TI que não 
+é de propriedade do usuário final. Alguns 
+dos maiores provedores de nuvens públicas 
+são: Amazon Web Services (AWS), Google 
+Cloud, IBM Cloud e Microsoft Azure. Toda 
+aquele cloud que tem um ambiente 
+particionado e redistribuídos para vários 
+locatários, caracteriza-se público. A 
+cobrança de taxas deixou de ser uma 
+característica primordial no cloud público. 
+Alguns provedores, como a Massachusetts 
+Open Cloud, permitem que os locatários as 
+usem gratuitamente.
+</td>
+    
+</table>
+
+<br>
+
+<table border="1">
+    <tr>
+        <td><b>Arquitetura privada:</b></td>
+    </tr>
+    <td>Nuvem privada nada mais é que um cloud 
+proprietário e gerenciada de forma privada, 
+geralmente no próprio servidor local da 
+empresa. Porém, a nuvem privada também 
+pode ir além e incluir diversos locais de um 
+servidor ou espaço alugado em instalações 
+de localizações geograficamente diversas. 
+Essa exclusividade tem um custo, é mais 
+elevado que as soluções de nuvem pública, 
+mas uma arquitetura de nuvem privada é 
+mais personalizável e pode oferecer 
+segurança de dados de maneira rigorosa em 
+relação a pública.
+</td>
+</table>
+
+<br>
+
+<table border="1">
+    <tr>
+        <td><b>Arquitetura híbrida:</b></td>
+    </tr>
+    <td>Um cloud híbrido combina a eficiência 
+operacional da cloud pública com os 
+recursos de segurança de dados da nuvem 
+privada. As nuvens híbridas ajudam a 
+consolidar recursos de TI e permitem que as 
+empresas migrem cargas de trabalho entre 
+ambientes, dependendo de seus requisitos 
+de segurança de dados e de TI.</td>
+</table>
+
+<br>
+
+<table border="1">
+    <tr>
+        <td><b>Arquitetura multi-cloud:</b></td>
+    </tr>
+    <td>A arquitetura multi-cloud é aquela que usa 
+vários serviços de computação em nuvem 
+pública. Uma das vantagens de um ambiente 
+multi-cloud é a flexibilidade maior para 
+escolher e implantar os serviços de 
+computação em nuvem que é a mais flexível 
+em atender aos mais variados tipos de 
+escopo. Outra vantagem é não contar 
+apenas com um único provedor de serviços, 
+o que reduz os custos e diminui a 
+probabilidade de dependência de 
+provedor. Além disso, a arquitetura multicloud pode ser necessária para executar 
+aplicativos em contêineres baseados em 
+microsserviços, em que os serviços 
+necessitem de várias nuvens</td>
+</table>
+
+<br>
+         <br>
+         <p><b>Pontos essenciais na arquitetura Cloud:</b></p>
+         <ol>
+          <li><b> Virtualização:</b>são criadas com base na virtualização de servidores, armazenamento e 
+redes. Os recursos virtualizados são uma representação baseada em software, virtual, ou até 
+mesmo um recurso físico, como servidores ou armazenamento. Essa camada de abstração 
+permite que várias aplicações utilizem os mesmos recursos físicos, o que aumenta a eficiência 
+de servidores, armazenamento e rede.</li>
+          <li><b> Infraestrutura:</b>Existem servidores reais, E Toda a infraestrutura conta com os mesmos 
+itens de um servidor tradicional, persistindo dados e equipamentos de rede, tais como switches 
+e roteadores.</li>
+          <li><b>Middleware:</b>O middleware atua como uma “camada” capaz de mediar entre várias 
+tecnologias de software para que as informações mesmo que de fontes diferentes, sejam 
+transferidas sem que suas diferenças de protocolo, plataforma, arquitetura, SO interfiram no 
+processo.</li>
+         <li><b>Gerenciamento:</b>Essas ferramentas monitoram continuamente o desempenho e a 
+capacidade do ambiente de nuvem. A partir de um único console, as equipes de TI podem 
+rastrear o uso, implantar novos aplicativos, integrar dados e garantir a recuperação de acidentes.</li>
+         <li><b></b></li>
+         </ol>
+
+
+
+         <p>Ligado ao Cloud Computing primeiramente surgiram os serviços de Software as a service ou em
+          português Aplicação como Serviço, o SaaS. Basicamente esse tipo de oferta de serviço oferece
+          uma aplicação (software) ao usuário, que não precisa adquirir de licenças de instalação nem
+          mesmo é necessário ter um espaço físico com servidores dedicados para utilizar da aplicação.</p>
+         <br>
+         <p><b>c. Exemplos de aplicações em Cloud Computing</b></p>
+         <p>Hoje em dia temos muitas opções de programas/serviços que utilizam o Cloud Computing,
+          iremos listar aqui alguns para vocês terem uma ideia de quais são.</p>
+         <br>
+         <p><b>Adobe Creative Cloud</b></p>
+         <p>Serviço de nuvem oferecido pela Adobe que inclui armazenamento, acesso a ferramentas da
+          empresa e integração com outros produtos Adobe.</p>
+         <br>
+         <p><b>Google Apps</b></p>
+         <p>Pacote de produtos oferecidos pelo Google, que inclui ferramentas de edição de texto, criação
+          de planilhas, apresentações, ferramenta de agenda, integração com e-mail próprio, entre outras
+          funcionalidades.</p>
+         <br>
+         <p><b>Aprex</b></p>
+         <p>Conjunto de aplicativos online, o Aprex oferece soluções para profissionais e empresas, como:
+          calendário, gerenciador de contatos, lista de tarefas, serviço de e-mail marketing,
+          armazenamento de arquivos, apresentações, entre outras.</p>
+         <br>
+         <p><b>Evernote</b></p>
+         <p>O Evernote é um aplicativo para criação e armazenamento de notas. Ótima opção para reuniões
+          e momentos de registrar ideias iniciais de um projeto. Inclui ferramentas de compartilhamento,
+          edição, organização e localização de dados.</p>
+          <p><b>OneDrive</b></p>
+          <p>Aplicativo de armazenamento em nuvem, o OneDrive é um produto da Microsoft. Por isso, outros
+            produtos da empresa possuem integração com ele como, por exemplo, contas Outlook.com.</p>
+            <p><b>Dropbox</b></p>
+            <p>Outra opção de armazenamento em nuvem, o Dropbox possui vários recursos de
+              compartilhamento de arquivos entre equipes e uma interface fácil e intuitiva.</p>
+              <p><b>Office online</b></p>
+              <p>Os produtos do pacote Office da Microsoft com o funcionamento Cloud Computing: Word, Excel,
+                PowerPoint, OneNote, Sway, E-mail, Calendário, Docs.com, e outros. Com esta aplicação, é
+                possível criar e compartilhar documentos de qualquer lugar com conexão à internet.</p>
+                <br>
+                <p><b>d. Vantagens e desvantagens:</b></p>
+                <br>
+                <p><b>Tranquilidade:</b></p>
+                <p>Uma vez que todo o processamento de dados é feito na nuvem, o usuário não precisa se
+                  preocupar com problemas de compatibilidade de hardware/software e segurança.
+                  </p>
+<p><b>Comodidade:</b></p>
+<p>A vantagem mais óbvia. Em qualquer lugar ou hora é possível acessar os dados da nuvem. Tudo
+  o que é necessário é um dispositivo com acesso à internet.
+  </p>
+  <p><b>Confiabilidade:</b></p>
+  <p>O acesso e processamento de dados não depende exclusivamente de um servidor, pelo que, em
+    caso de falha o serviço não fica comprometido.
+    </p>
+    <p><b>Capacidade de armazenamento virtualmente ilimitada</b></p>
+    <p>O usuário não precisa de se preocupar com o alojamento da informação porque esta não fica
+      alojada no seu computador.</p>
+      <br>
+      <p>Temos também o outro lado da moeda, vejamos os pontos negativos a se destacar:</p>
+      <p><b>Dependência:</b></p>
+      <p>O acesso aos dados da nuvem depende obrigatoriamente de uma conexão à internet. Caso esta
+        não exista não existem alternativas para contornar o problema.
+        </p>
+        <p><b>Recuperação de dados:</b></p>
+        <p>Apesar da nuvem ser bastante confiável, falhas e erros são sempre possíveis. Caso a nuvem
+          deixe de funcionar, todos os dados estão comprometidos e podem, eventualmente, ser perdidos.</p>
+          <p><b>Opções mais limitadas:</b></p>
+          <p>Esta é uma limitação técnica. Não é possível (pelo menos atualmente) desenvolver softwares
+            muito complexo que processe a informação fora do computador local.
+            </p>
+            <p><b>Vulnerabilidade:</b></p>
+            <p>A segurança informática é um tópico transversal em qualquer tema desta área. Aqui não é
+              exceção. Todos os dados da nuvem estão vulneráveis a ataques hackers.</p>
+
+
+  </div>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
